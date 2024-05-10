@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal:#FFFFFF;
+    --cor-secundaria:#C0C0C0;
+    --cor-terciaria:#00030C;
+    --cor-botao:#167BF7;
+    --cor-hover:#272727;
+    --cor-hover-secundario:#191970;
+    --fonte-principal:"Inter";
+}
+
+body {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(./Assets-Alura-Plus+/Background.png);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.container__botao {
+   display: flex;
+    display: block;
+    text-align: center;
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-hover-secundario);
+}
+
+.botao_secundario {
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+.botao_secundario:hover {
+    background-color: var(--cor-hover);
+}
+
+.container__aviso {
+    font-size: 12px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.imagem {
+    margin: 1em 0 2em 0;
+}
+
+.caixa {
+    margin: 0 6em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.imagem__secundaria {
+    width: 80%;
+}
+
+.container__descricao {
+    text-align: center;
+}
+
+.titulo__texto {
+    font-size: 40px;
+    margin-bottom: 8px;
+    color: var(--cor-principal);
+}
+
+.texto__paragrafo {
+    font-size: 12px;
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.imagem__terciaria {
+    margin: 0 0 0 29px;
+}
+
+.container__terciario {
+    text-align: center;
+}
+
+.container__titulo {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+
+.container__imagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-size: 48px;
+    color: var(--cor-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista__link :hover {
+    color: var(--cor-hover-secundario)
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 1em;
+    gap: 10px;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    }
+
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .imagem {
+        width: 50vw;
+    }
+
+    .caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .imagem__secundaria {
+        width: 50vw;
+    }
+    
+    .imagem__terciaria {
+        width: 50vw;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .imagem__secundaria {
+        margin-bottom: 15px;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+    .imagem__terciaria {
+        align-items: center;
+    }
+
+    .secundario__botao {
+        display: block;
+        margin: 0 2em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .texto__paragrafo {
+        margin-top: 20px;
+        margin: 0 2em
+    }
+}
